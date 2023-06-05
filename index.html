@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<title>For my baby</title>
+		<link rel="stylesheet" type="text/css" href="./css/format.css">
+	</head>
+
+	<body style="margin:0px">
+		<audio autoplay loop>
+			<source src="music/music.mp3" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<canvas></canvas>
+		<div id="imgTxt">
+			<span id="Txt"></span> <br />
+			<span id="tmp"></span>
+			<img id="img" src="">
+		</div>
+		<div id="heartTxt">
+			<span id="clickMe">Our Pic Together!</span>
+			<div id="heart">
+				<button id="button" onclick="play()"></button>
+			</div>
+		</div>
+		<div id="content">
+			<h2 id="together">We have been together for :</h2>
+			<div id="timer">
+				<b id="d"></b> Days 
+				<b id="h"></b> Hours
+				<b id="m"></b> Minutes
+				<b id="s"></b> Seconds
+			</div>
+		</div>
+
+    	<div id = "typeDiv">
+        	<span id="txt1"></span> <br />
+        	<span id="txt2"></span>
+    	</div>		
+
+		<script >
+			var ok = 0;
+			var flag = 1;
+			var myImage = document.getElementById("img");
+			var myTxt = document.getElementById("Txt");
+			var imageArray = ["pic/IMG_3347.JPG", "pic/23ca4e87-c906-4dac-9b97-e940c2b45889.JPG", "pic/78D1DDDA-C619-479A-B8D3-CB6EF3D61906.JPG", 
+			"pic/29430040-9865-420f-a579-706e8aebc8a0.JPG", "pic/edeca0c7-3d87-41a8-a437-d9b327057315.JPG", "pic/f0ea3224-becd-4945-8ff2-5961a2c2ff72.JPG"];
+			var imageIndex = 0;
+			var txtArray = ["First date!", "New year together ^^", "Illumi datee", "Baby strongggg heheh", 
+			"Blue Mountain!", "Summer pertama sama baby!!"];
+			var len = imageArray.length;
+			var t = 0;
+		</script>
+		
+		<script type="text/javascript" src="./js/stars.js"></script>
+		<script type="text/javascript" src="./js/typeWriter.js"></script>
+		<script type="text/javascript" src="./js/date.js"></script>
+		<script type="text/javascript" src="./js/playImg.js"></script>
+	</body>
+</html>
